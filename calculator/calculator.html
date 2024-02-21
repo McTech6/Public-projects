@@ -1,43 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
     <title>Calculator</title>
-</head>
-<body>
-    <h1 class="heading">Welcome To Calculate Me!</h1>
-    <div class="container ">
-        <div class="row">
-            <input type="text" class="input">
-        </div>
-        <div class="row">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">*</button>
-        </div>  
-        <div class="row">
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">/</button>
-        </div>  
-        <div class="row">
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">+</button>
-        </div>  
-        <div class="row">
-            <button class="btn">0</button>
-            <button class="btn">-</button>
-            <button class="btn">=</button>
-            <button class="btn">%</button>
-        </div>  
+ </head>
+ <body>
+    <div class="calculator-grid">
+       <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-present-operand class="present-operand"></div>
+       </div> 
+       <button data-ac class="span-2">AC</button>
+       <button data-delete>DEL</button>
+       <button data-operation>/</button>
+       <button data-number>1</button>
+       <button data-number>2</button>
+       <button data-number>3</button>  
+       <button data-operation>*</button>
+       <button data-number>4</button>
+       <button data-number>5</button>
+       <button data-number>6</button>  
+       <button data-operation>+</button>
+       <button data-number>7</button>
+       <button data-number>8</button>
+       <button data-number>9</button>  
+       <button data-operation>-</button> 
+       <button data-operation>.</button>
+       <button data-number>0</button>
+       <button data-equal class="span-2">=</button>  
+        
+           
     </div>
 
     <script src="calculator.js"></script>
-</body>
-</html>
+ </body>
+ </html>
